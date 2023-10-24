@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive ABCs of CSS Technology</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h2>
+        Welcome to the Interactive ABCs of CSS Technology learning Website
+      </h2>
+      <p>
+        Click on the buttons below to reveal and learn the CSS technology
+        features of the corresponding letters
+      </p>
+
+      <button class="button" onclick="toggle('A')">A</button>
+      <button class="button" onclick="toggle('B')">B</button>
+      <button class="button" onclick="toggle('C')">C</button>
+
+      <div id="A-result" class="result">
+        A is for aspect-ratio
+        <button class="hide" onclick="hide('A')">Hide Result</button>
+      </div>
+
+      <div id="B-result" class="result">
+        B is for border
+        <button class="hide" onclick="hide('B')">Hide Result</button>
+      </div>
+
+      <div id="C-result" class="result">
+        C is for colors
+        <button class="hide" onclick="hide('C')">Hide Result</button>
+      </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
