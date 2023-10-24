@@ -7,35 +7,45 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="content">
-      <h2>
-        Welcome to the Interactive ABCs of CSS Technology learning Website
-      </h2>
-      <p>
-        Click on the buttons below to reveal and learn the CSS technology
-        features of the corresponding letters
-      </p>
+    <div class="main-container">
+      <div class="content">
+        <h2>
+          Welcome to the Interactive ABCs of CSS Technology learning Website
+        </h2>
+        <p>
+          Click on the buttons below to reveal and learn the CSS technology
+          features of the corresponding letters
+        </p>
 
-      <button class="button" onclick="toggle('A')">A</button>
-      <button class="button" onclick="toggle('B')">B</button>
-      <button class="button" onclick="toggle('C')">C</button>
+        <div class="button-container">
+          <button class="button" onclick="toggle('A')">A</button>
+          <button class="button" onclick="toggle('B')">B</button>
+          <button class="button" onclick="toggle('C')">C</button>
+        </div>
 
-      <div id="A-result" class="result">
-        A is for aspect-ratio
-        <img src="./media/css-letter-a.png" alt="Image for A" />
-        <button class="hide" onclick="hide('A')">Hide Result</button>
-      </div>
+        <div id="A-result" class="result">
+          <div class="hidden-content">
+            A is for aspect-ratio
+            <img src="./media/css-letter-a.png" alt="Image for A" />
+            <button class="hide" onclick="hide('A')">Hide Result</button>
+          </div>
+        </div>
 
-      <div id="B-result" class="result">
-        B is for border
-        <img src="./media/css-letter-b.png" alt="Image for B" />
-        <button class="hide" onclick="hide('B')">Hide Result</button>
-      </div>
+        <div id="B-result" class="result">
+          <div class="hidden-content">
+            B is for border
+            <img src="./media/css-letter-b.png" alt="Image for B" />
+            <button class="hide" onclick="hide('B')">Hide Result</button>
+          </div>
+        </div>
 
-      <div id="C-result" class="result">
-        C is for colors
-        <img src="./media/css-letter-c.png" alt="Image for C" />
-        <button class="hide" onclick="hide('C')">Hide Result</button>
+        <div id="C-result" class="result">
+          <div class="hidden-content">
+            C is for colors
+            <img src="./media/css-letter-c.png" alt="Image for C" />
+            <button class="hide" onclick="hide('C')">Hide Result</button>
+          </div>
+        </div>
       </div>
     </div>
 
