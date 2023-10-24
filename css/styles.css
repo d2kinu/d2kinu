@@ -38,3 +38,13 @@ p {
 .result {
   display: none;
 }
+
+/* Image styling */
+.result img {
+  max-width: 250px; /* Setting a consistent width for images */
+  margin: 20px auto; /* Centers the image and gives space above and below */
+  display: block; /* To allow for centering with auto margins */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  border: 2px solid #e0e0e0; /* Slight border around image */
+  border-radius: 8px; /* Rounded corners */
+}
