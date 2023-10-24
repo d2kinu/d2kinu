@@ -32,19 +32,31 @@ p {
   border: 1px solid #dcdcdc;
   cursor: pointer;
   background-color: #fff;
+  display: inline-block; /* Makes the button stack horizontally */
 }
 
-/* Hide all result sections by default */
 .result {
   display: none;
+  background-color: #fff79d; /* Background color for the revealed content */
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center; /* Center the content */
 }
 
-/* Image styling */
 .result img {
-  max-width: 250px; /* Setting a consistent width for images */
-  margin: 20px auto; /* Centers the image and gives space above and below */
-  display: block; /* To allow for centering with auto margins */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
-  border: 2px solid #e0e0e0; /* Slight border around image */
-  border-radius: 8px; /* Rounded corners */
+  max-width: 250px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.hide {
+  display: inline-block; /* Displayed inline, below the image */
+  background-color: #e0e0e0;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px; /* Space above the button */
 }
